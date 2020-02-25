@@ -1,0 +1,39 @@
+.package-container{
+    background-color: white;
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 82vw;
+    grid-template-rows: 10vh 90vh;  
+    box-sizing: border-box;
+
+}
+
+.info-container {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 50% 50%;  
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .package-container{
+        display:grid;
+        grid-template-columns: 70vw;
+        grid-template-rows: 10vh 90vh;  
+        box-sizing: border-box;
+    }
+
+    .info-container {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 20px;
+        overflow: auto;
+    }
+  }

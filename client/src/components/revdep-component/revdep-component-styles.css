@@ -1,0 +1,28 @@
+
+.revdep-container {
+    display: grid;
+    padding: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-template-rows: 30px 1fr;    
+}
+
+.title{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.revdep{
+    margin-top: 20px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    overflow: auto;
+}
+
+@media (max-width: 970px) {
+    .revdep{
+        margin-top: 50px;
+    }
+}

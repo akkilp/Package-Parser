@@ -1,0 +1,104 @@
+button {
+    font-size: 20px;
+    font-weight: bolder;
+    position:relative;
+    display: inline-block;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    background: white;
+    color: #242730;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+button:hover .effect-up{
+    position: relative; 
+    top: 2px;
+    transition:  0.2s;
+}
+
+.effect-up{
+    position: relative;
+    top: 0;
+    transition: all 0.2s ease-out 0s;
+}
+
+button:hover .effect-down{
+    position: relative; 
+    bottom: 2px;
+}
+
+.effect-down{
+    position: relative;
+    bottom: 0;
+    transition: all 0.2s ease-out 0s;
+}
+
+
+/* .upload-container::before { 
+    color: black;
+    font-size: 12px;
+    content: "Choose a file";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: gray;
+    border-radius: 10%;
+  } */
+
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.upload-container
+    {
+    display:flex;
+    position: relative;
+    padding: 10px; 
+  }
+
+.file-container{
+    position:relative;
+    width: 100%;
+    height:100%;
+    transition: 0.2s ease-out;
+    background-color:#b1b1b3;
+    opacity: 1;
+    border-radius: 10px;
+    transform: scale(0.8)
+
+}
+
+.file-container:hover{
+    transform: scale(0.85)
+}
+
+
+  input {  
+    position:absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+
+  

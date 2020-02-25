@@ -1,0 +1,58 @@
+body {
+  color: #242730;
+  font-size: 14px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+a{
+  color: #242730;
+}
+
+a:visited{
+  color: #242730;
+}
+
+h1{
+  padding-left: 40px;
+  font-weight: 100
+}
+
+h2{
+  font-weight: 100;
+}
+
+span{
+  font-weight: 100;
+}
+
+ul{
+  padding-left: 5px;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+li{
+  margin:2px;
+}
+
+.App{
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.left-container{
+  box-sizing: border-box;
+  width: 18vw;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .left-container{
+      width: 40vw;
+  }
+}
+

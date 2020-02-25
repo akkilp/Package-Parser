@@ -1,0 +1,23 @@
+.desc-container {
+    display:grid;
+    padding: 20px;
+    white-space: pre-line;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-template-rows: 30px 1fr;
+}
+
+.title{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.description {
+    margin-top: 20px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    overflow: auto;
+}
+
