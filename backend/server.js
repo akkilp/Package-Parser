@@ -71,7 +71,6 @@ async function handleUpload(req,res) {
 // GET ROUTE
 // Executes main function for the selected file and sends it to the client
 app.get('/packages', async (req, res) => {
-    console.log("GET")
     packageArray = await handleFile(filepath)
     packet = JSON.stringify(Object.assign({},packageArray))
     res.send(packet);
@@ -80,7 +79,6 @@ app.get('/packages', async (req, res) => {
 // POST PATH
 // Is used to choose the file
 app.post('/upload', (req, res) => {
-    console.log("POST")
     handleUpload(req,res)
 });
 

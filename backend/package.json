@@ -5,7 +5,10 @@
   "scripts": {
     "client": "cd.. && cd client && npm start",
     "backend": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run client\""
+    "dev": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run client\"",
+    "backend-install": "npm install",
+    "frontend-install": "cd .. && cd client && npm install",
+    "init-install": "npm run backend-install & npm run frontend-install"
   },
   "engines": {
     "node": "10.16.0"
