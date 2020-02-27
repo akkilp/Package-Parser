@@ -1,15 +1,15 @@
 # Package-Parser
-Express/React package parser. Reads, parses and displays data in HTML environment.
+Express/React package parser. Reads, parses and displays data in HTML environment.</br>
 
 Pre-assignment for Reaktor's Summer Junior Developer position.
 
 ## Introduction
 Application consists of front- and backend.
 
-Front is powered by React, and it communicated with backend API with POST and GET requests.
+Front is powered by React, and it communicated with backend API with POST and GET requests.</br>
 POST is used to choose file that is sent to the client and GET request fetches the data which is then being rendered by React.</br>
 
-Backend uses Node.js/Express. It contains GET and POST as earlier declared. 
+Backend uses Node.js/Express. It contains GET and POST as earlier declared. </br>
 GET path: Runs function that takes file path as variable, reads the file and parses it using RegExr. Returns array that is being turned into JSON object, when sent to client.</br>
 POST path: Uses multer to upload data to ./public directory and changes file path variable to that file. 
 
